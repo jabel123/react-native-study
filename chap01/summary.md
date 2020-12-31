@@ -14,3 +14,9 @@
 $ npm install -g create-react-native-app
 $ npx create-react-native-app myProject
 ```
+
+후에 프로젝트가 생성되면 다음의 명령을 수행하면 에뮤레이터? 가 실행되는듯.. 일단 여기에 설명이 너무 부족하다.. 진도를 진행하면 더 상세한 설명이 나오지 않을까 생각중
+```
+npm run web
+```
+
