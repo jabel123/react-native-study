@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
         bottom: 52
     },
     bottonContainer: {
-        positioN: 'absolute',
+        position: 'absolute',
         bottom: 0,
         left: 0,
         width: '100%'

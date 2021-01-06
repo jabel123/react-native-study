@@ -9,24 +9,11 @@ import { createAppContainer } from 'react-native'
 import { createStackNavigator } from 'react-navigation-stack'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
 
-const CitiesNav = createStackNavigator({
-    Cities: { screen: Cities },
-    City: { screen: City }
-},
-    {
-        navigationOptions: {
-            headerStyle: {
-                backgroundColor: colors.primary
-            },
-            headerTintColor: '#fff'
-        }
-    })
 
-const AppTabs = createBottomTabNavigator({
-    Cities: { screen: CitiesNav },
-    AddCity: { screen: AddCity }
-})
-
-const Tabs = createAppContainer(AppTabs)
+const Tabs = () => {
+    <View>
+        <Text>Hello World</Text>
+    </View>
+}
 
 export default Tabs

@@ -30,3 +30,4 @@ $ npx react-native link react-native-gesture-handler
 -- 데이터 유지를 위한 async-storage 설치
 $ npm install @react-native-community/async-storage
 ```
+음,, 코드를 다 적고 실행하려는데,, 하얀 화면만 뜨고있다 ㅠ 아예 CitiesApp을 참조하여 CitiesApp2를 생성하고자 함.

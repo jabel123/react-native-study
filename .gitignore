@@ -380,4 +380,13 @@ Temporary Items
 # End of https://www.toptal.com/developers/gitignore/api/node,react,reactnative
 
 __tests__
-ios/Pods
+ios
+Android
+.buckconfig
+.prettierrc.js
+.watchmanconfig
+.flowconfig
+.eslintrc.js
+metro.config.js
+package-lock.json
+package.json
