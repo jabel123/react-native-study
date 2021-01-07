@@ -30,4 +30,23 @@ $ npx react-native link react-native-gesture-handler
 -- 데이터 유지를 위한 async-storage 설치
 $ npm install @react-native-community/async-storage
 ```
-음,, 코드를 다 적고 실행하려는데,, 하얀 화면만 뜨고있다 ㅠ 아예 CitiesApp을 참조하여 CitiesApp2를 생성하고자 함.
+음,, 코드를 다 적고 실행하려는데,, 하얀 화면만 뜨고있다 ㅠ 아예 문서를 보고 새로운 프롲게트를 만들어 보고자 한다.
+
+```
+$ npm install @react-navigation/native
+$ npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+$ npm install @react-navigation/stack <-- 요건 이미 있다고 한다. ㅋㅋ
+```
+
+https://reactnavigation.org/docs/4.x/navigating 여기,, 좋다.. 와,, 일단 내거 버전인 4.x에 맞춰서 테스트코드 작성을 진행하고자 한다.
+
+--- 
+
+## 내비게이션 라이프사이클
+
+이전 섹션에서는 두 개의 화면(Home 및 Details)이 있는 스택 탐색기로 작업했으며 this.props.navigation.navigate('RouteName')를 사용하여 경로를 탐색하는 방법을 배웠습니다.
+
+이 맥락에서 중요한 질문은 다음과 같습니다. 홈에서 멀어지거나 다시 돌아오면 홈에 어떤일이 발생하는가? 경로는 사용자가 경로를 떠나거나 돌아오는 것을 어떻게 알 수 있을까?? 
+
+웹에서 React Navigation으로 이동하면 사용자가 경로 A에서 경로 B로 이동할 때 A가 마운트 해제되고 해당 componentWillUnmount가 호출된다고 가정할 수 있습니다. 사용자가 돌아올 떄 A가 다시 마운트 될 것으로 예상할 수도 있습니다. 이러한 React 라이프 사이클 방법은 여전히 유효하고 React Navigation에서 사용되지만 사용법은 웹과 다릅니다. 이는 모바일 내비게이션의 더 복잡한 요구에 의해 주도됩니다. 
