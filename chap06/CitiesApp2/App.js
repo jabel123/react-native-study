@@ -12,17 +12,15 @@ import {
   Text,
 } from 'react-native';
 
+import Tabs from './src'
+
 export default class App extends Component {
   constructor(props){
     super(props)
   }
   render() {
     return (
-      <View>
-        <Text>
-          시작
-        </Text>
-      </View>
+      <Tabs/>
     )
   }
 }
