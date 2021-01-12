@@ -8,7 +8,7 @@ import {
     TouchableOpacity
 } from 'react-native'
 
-import {addBook} from './actions'
+import { addBook, removeBook } from './actions'
 
 import { connect } from 'react-redux'
 
@@ -31,12 +31,13 @@ class Books extends React.Component {
         this.props.dispatchAddBook(this.state)
         this.setState(initialState)
     }
-    removeBook = () => {
+    removeBook = (book) => {
         this.props.dispatchRemoveBook(book)
     }
 
     render() {
         const {books} = this.props
+
         return (
             <View style = {styles.container}>
                 <Text style= {styles.title}>Books</Text>
@@ -146,9 +147,9 @@ const mapStateToProps = (state) => ({
     books: state.bookReducer.books
 })
 
-const mapDispatchToProps = (state) => ({
+const mapDispatchToProps = {
     dispatchAddBook: (book) => addBook(book),
     dispatchRemoveBook: (book) => removeBook(book)
-})
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Books)

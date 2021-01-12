@@ -1,6 +1,6 @@
 import React from 'react'
-import Books from './Books'
-import rootReducer from './reducers/index'
+import Books from './src/Books'
+import rootReducer from './src/reducers/index'
 
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'

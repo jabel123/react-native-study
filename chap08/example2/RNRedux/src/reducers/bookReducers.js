@@ -1,4 +1,4 @@
-import uuidV4 from 'uuid/v2'
+import uuidV4 from 'uuid/v4'
 import { ADD_BOOK, REMOVE_BOOK } from '../actions'
 
 
@@ -16,9 +16,7 @@ const bookReducer = (state = initialState, action) => {
                 ]
             }
         case REMOVE_BOOK: 
-            const index = state.books.findIndex(
-                book => book.id === action.book.id)
-            
+            const index = state.books.findIndex(book => book.id === action.book.id)            
             return {
                 books: [
                     ...state.books.slice(0, index),
