@@ -12,7 +12,7 @@ export function addBook (book) {
     }
 }
 
-export function remove(book) {
+export function removeBook(book) {
     return {
         type: REMOVE_BOOK,
         book

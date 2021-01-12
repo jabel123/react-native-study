@@ -14,6 +14,7 @@ context는 앱 전체에서 참조할 수 있는 전역 변수를 만드는 Reac
 $ npx react-native init RNRedux
 $ cd RNRedux
 $ npm install --save redux react-redux
+$ npm install uuid
 ```
 
 ## 리덕스 리듀서로 리덕스 상태 관리하기
